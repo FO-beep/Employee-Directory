@@ -3,8 +3,8 @@ import "../styles/SearchArea.css";
 
 function SearchArea({ handleSearchChange }) {
   return (
-    <div className="searcharea">
-      <form className="form-inline">
+    <form className="form-inline">
+      <div className="searcharea">
         <input
           className="form-control mr-sm-2"
           type="search"
@@ -15,8 +15,8 @@ function SearchArea({ handleSearchChange }) {
         <button className="btn my-2 my-sm-0" type="submit">
           Search
         </button>
-      </form>
-    </div>
+      </div>
+    </form>
   );
 }
 export default SearchArea;
