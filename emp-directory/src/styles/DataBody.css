@@ -1,0 +1,8 @@
+.name-cell {
+  text-transform: capitalize;
+}
+
+.align-middle {
+  background-color: rgb(19, 13, 19);
+  color: plum;
+}
