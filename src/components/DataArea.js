@@ -58,10 +58,11 @@ export default class DataArea extends Component {
       },
 
       handleSearchChange: (event) => {
-        // console.log(event.target.value);
+        console.log(event.target.value);
         const filter = event.target.value;
         const filteredList = this.state.users.filter((item) => {
-          let values = Object.values(item).join("").Lowercase();
+          // occurring error right here
+          let values = Object.values(item).join("").toLowercase();
           return values.indexOf(filter.toLowerCase()) !== -1;
         });
         this.setState({ filteredUsers: filteredList });
